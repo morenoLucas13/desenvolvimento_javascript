@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            background-image: url("https://i.pinimg.com/736x/2f/41/9d/2f419dd6b349a262b035635123a70dac.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .titulo {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .mainUL {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .mainUL li {
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .mainUL li:hover {
+            color: #d40000;
+        }
+
+        .mainBox {
+            background-color: rgba(240, 248, 255, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 30px;
+        }
+
+        h3,
+        h4 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li,
+        ol li {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            color: #00bcd4;
+            font-weight: 500;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Plataforma de Cursos do SENAI!</h1>
+        <ul class="mainUL">
+            <li>Principal</li>
+            <li>Área do Alunos</li>
+            <li>Sobre o SENAI</li>
+        </ul>
+    </header>
+
+    <div class="mainBox">
+        <main>
+            <section>
+                <h3>Meus Cursos Inscritos</h3>
+                <p>Bem-vindo à área do aluno!</p>
+                <p>Programe-se para concluir as atividades dentro do prazo.</p>
+                <p>Em caso de dúvidas, entre em contato com o suporte.</p>
+
+                <h4>Cursos em andamento</h4>
+                <ul>
+                    <li><strong>Analise e Desenvolvimento de Sistemas</strong> - Progresso: 45%</li>
+                    <li><strong>Desenvolvimento JS</strong> - Progresso: 21%</li>
+                    <li><strong>PowerBI</strong> - Progresso: 99%</li>
+                </ul>
+
+                <h3>Cursos Concluídos</h3>
+                <ol type="I">
+                    <li><strong>Panificadora</strong> - concluiu 01/05/2024</li>
+                    <li><strong>Eletrônica</strong> - concluiu 27/07/2023</li>
+                    <li><strong>Confeitaria</strong> - concluiu 13/11/2019</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Alunos em Destaque:</h3>
+                <dl>
+                    <dt>Desenvolvimento JS</dt>
+                    <dd>Lucas Nepoonuceno Moreno - 10</dd>
+                    <dd>Rafael Silva Tomasetti - 9.9</dd>
+                    <br>
+                    <dt>Programação em Python</dt>
+                    <dd>Lucas Nepoonuceno Moreno - 10</dd>
+                    <dd>Rafael Silva Tomasetti - 9.9</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>Calendário das Aulas</h3>
+                <p>Fique atento ao <b>prazo</b> das <strong>atividades</strong></p>
+            </section>
+
+            <section>
+                <h3>Material Complementar</h3>
+                <a href="https://www.sp.senai.br/" rel="nooperner noreferrer" target="_blank">
+                    <img src="https://www.imparcial.com.br//assets/images/galeria/1724961484.png"
+                        alt="Material Complementar">
+                </a>
+            </section>
+
+            <section>
+                <h3>Financeiro</h3>
+                <table border="1">
+                    <tr>
+                        <th>Mês</th>
+                        <th>Valor</th>
+                        <th>Situação</th>
+                    </tr>
+                    <tr>
+                        <td>Fevereiro</td>
+                        <td>R$ 100,00</td>
+                        <td>Pago</td>
+                    </tr>
+                    <tr>
+                        <td>Março</td>
+                        <td>R$ 100,00</td>
+                        <td><mark>Em aberto</mark></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>Videoaula da Semana:</h3>
+                <video
+                    src="https://file-examples.com/storage/fe46ad26fa67d4043a4b9e6/2017/04/file_example_MP4_480_1_5MG.mp4"></video>
+            </section>
+
+            <section>
+                <h3>Podcast:</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Seu navegador não suporta o audio
+                </audio>
+            </section>
+
+            <section>
+                <h3>Solicitação de Certificado</h3>
+                <form action="">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+                    <label for="curso"></label>
+                    <select name="curso" id="curso">
+                        <option value="1">Desenvolvimeno JS</option>
+                        <option value="2">PowerBI</option>
+                        <option value="3">Programação em Python</option>
+                        <option value="4">Confeitaria</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="obs">Observações</label>
+                    <textarea name="obs" id="obs" rows="4" cols="50"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
