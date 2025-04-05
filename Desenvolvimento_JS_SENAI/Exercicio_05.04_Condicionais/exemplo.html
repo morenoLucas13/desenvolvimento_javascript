@@ -7,10 +7,20 @@
 </head>
 <body>
     <script>
-        /*
+        // exercicio 1
+        // Maior que 10
+        let num = parseInt(prompt("Digite um número:"))
+
+        if (num > 10) {
+            console.log(true)
+        } else {
+            console.log(false)
+        }
+        
+
         // exercicio 2 
         // saber se o numero é par/impar
-        var numero = 7;
+        let numero = 7;
         console.log(numero % 2);
         if (numero % 2 === 0){
             consol.log("Par");
@@ -20,11 +30,11 @@
 
         // exercicio 3
         // maior e menor numero
-        var numero1 = 10;
-        var numero2 = 20;
-        var numero3 = 30;
-        var maior = 0;
-        var menor = 0;
+        let numero1 = 10;
+        let numero2 = 20;
+        let numero3 = 30;
+        let maior = 0;
+        let menor = 0;
         
         if (numero1 > numero2 && numero1 > numero3){
             maior = numero1
@@ -47,7 +57,6 @@
             menor = numero3
         }
         console.log("O menor número é: " + menor )
-        */
 
         // Exercicio 04
         // Calculadora
@@ -56,32 +65,28 @@
         let n2 = parseInt(prompt("Digite outro número:"))
         let valor
 
-        if (operacao == "+") {
-            valor = n1 + n2
-            alert(valor)
-
-        // switch (operacao) {
-        //     case "+":
-        //         valor = n1 + n2
-        //         alert(valor)
-        //         break;
-        //     case "-":
-        //         valor = n1 - n2
-        //         alert(valor)
-        //         break;
-        //     case "*":
-        //         valor = n1 * n2
-        //         alert(valor)
-        //         break;
-        //     case "/":
-        //         valor = n1 / n2
-        //         alert(valor)
-        //         break;
+        switch (operacao) {
+            case "+":
+                valor = n1 + n2
+                alert(valor)
+                break;
+            case "-":
+                valor = n1 - n2
+                alert(valor)
+                break;
+            case "*":
+                valor = n1 * n2
+                alert(valor)
+                break;
+            case "/":
+                valor = n1 / n2
+                alert(valor)
+                break;
         
-        //     default:
-        //         alert("Operação invalida!")
-        //         break;
-        // }
+            default:
+                alert("Operação invalida!")
+                break;
+        }
 
     </script>
 </body>
