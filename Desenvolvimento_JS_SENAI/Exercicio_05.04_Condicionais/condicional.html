@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Condicionais</title>
+</head>
+<body>
+    <h1>Exemplo de condicionais</h1>
+
+    <script>
+
+        var idade = 18;
+        
+        if (idade < 18){
+            console.log('Menor de idade');
+        }
+        else{
+            console.log('Maior de Idade');
+        }
+
+        if (idade < 18){
+            console.log("Menos de 18 anos")
+        }
+        else if( idade === 18){
+            console.log("Tem 18 anos")
+        }
+        else {
+            console.log("Mais de 18 anos")
+        }
+
+        var nota = 7;
+        var faltas = 3;
+
+        if(nota >= 7 && faltas <= 4){
+            console.log("Aluno aprovado!")
+        }
+        else{
+            console.log("Aluno reprovado!")
+        }
+
+        if(nota >= 7 || faltas <= 4){
+            console.log("Aluno aprovado!")
+        }
+        else{
+            console.log("Aluno reprovado!")
+        }
+
+        var nome = "Lucas";
+        if(nome){
+            console.log(nome);
+        } else {
+            console.log("Nome não informado");
+        }
+
+        var nome = "";
+        var mensagem = "";
+        if (nome) {
+            mensagem = nome;
+        } else {
+            mensagem = "Nome não informado";
+        }
+        console.log(mensagem);
+
+        mensagem = nome ? nome : "Nome não informado";
+        console.log(nome);
+
+        var nome = "";
+        var idade = 18;
+
+        if(nome){
+            if(idade >= 18){
+                console.log(nome. idade);
+            }else {
+                console.log(nome);
+            }
+        } else {
+            console.log("Nome não informado!")
+        }
+    </script>
+</body>
+</html>
