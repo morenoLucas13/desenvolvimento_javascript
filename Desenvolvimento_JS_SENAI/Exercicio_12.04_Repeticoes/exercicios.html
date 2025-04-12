@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exrcícios Repetições</title>
+</head>
+
+<body>
+    <h1>Exrcícios de Repetições</h1>
+
+    <script>
+        // Contador 1 até 10
+        console.log("====Exercício 1====")
+        for (let cont = 1; cont <= 10; cont++) {
+            console.log(cont)
+        }
+
+        // Contagem regressiva de 10 até 0
+        let regressiva = 10
+
+        console.log("====Exercício 2====")
+        while (regressiva >= 0) {
+            console.log(regressiva)
+            regressiva--;
+        }
+
+        // Tabuada do 7
+        console.log("====Exercício 3====")
+
+        let cont7 = 1
+
+        while (cont7 <= 10) {
+            let result = 7 * cont7
+            console.log("7 x ", cont7, " = ", result)
+            cont7++;
+        }
+
+        // Mostrar os números pares de 0 até 50, exceto 10 e 20
+        console.log("====Exercício 4====")
+        let contP = 0
+
+        while (contP <= 50) {
+
+            if (contP % 2 == 0) {
+                if (contP != 10 || contP != 20) {
+
+                    console.log(contP)
+                }
+            }
+            contP++;
+        }
+
+    </script>
+</body>
+
+</html>

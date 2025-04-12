@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando funções</title>
+</head>
+<body>
+    <h1>Funções</h1>
+    <script>
+
+        function saudacao(){
+            console.log("Olá mundo!");
+        }
+
+        saudacao();
+
+        function saudacaoComoArgumento(nome){
+            console.log("Olá mundo! Eu sou "+ nome);
+        }
+
+        saudacaoComoArgumento("Lucas");
+        saudacaoComoArgumento("Rafael");
+
+        function saudacaComoArgOpicional(nome, saudacao = "Olá"){
+            console.log(saudacao + ", meu nome é "+ nome);
+        }
+        saudacaComoArgOpicional("Lucas");
+        saudacaComoArgOpicional("Maria", "Oi");
+
+        function somar(numero1, numero2){
+            console.log(numero1 + numero2);
+        }
+
+        somar(5,2);
+        somar(3,5);
+
+        function somarRetorno(numero1, numero2){
+            return (numero1 + numero2);
+        }
+
+        var soma = somarRetorno(5,2);
+        console.log(soma);
+        
+        function media(n1, n2, n3){
+            return ((n1+n2+n3)/3);
+        }
+
+        console.log(media(10, 10, 10));
+        if(n > 7){
+            console.log("passou!");
+        }
+        else{
+            console.log("até o ano que vem!")
+        }
+</script>
+
+</body>
+</html>
