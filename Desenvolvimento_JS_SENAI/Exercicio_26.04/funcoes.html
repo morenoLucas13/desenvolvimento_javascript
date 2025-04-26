@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Função onde verifica se o número é par ou impar
+        function verificacaoImPar(num) {
+            if (num % 2 == 0) {
+                console.log(`O número ${num} é par`)
+            } else {
+                console.log(`O número ${num} é impar`)
+            }
+        }
+
+        verificacaoImPar(4)
+        verificacaoImPar(5)
+
+        // Tabuada, lista Array
+        function tabuada(lista) {
+
+            for (i = 0; i < lista.length; i++) {
+                console.log(`Tabuada do ${lista[i]}\n`)
+                for (mult = 0; mult <= 10; mult++) {
+                    result = lista[i] * mult
+                    console.log(`${lista[i]} x ${mult} = ${result}`)
+                }
+                console.log(`\n`)
+            }
+        }
+
+        tabuada([10, 5, 3, 8, 2])
+
+        /*
+            Receber peso e altura e cultura IMC
+            Verifica se a pessoas está abaixo do peso, peso normal, sobrepeso ou obesidade.
+            Abaixo 18.5 => Abaixo do peso
+            Entre 18.5 e 24.9 => Peso normal
+            Igual ou acima de 25 e abaixo de 29.9 => Sobrepeso
+            Acima de29.9 => Obesidade
+        */
+
+        function IMC(peso, altura) {
+            imc = peso / (altura ** 2)
+
+            if (imc < 18.5) {
+                console.log('Abaixo do peso\n')
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                console.log('Peso normal\n')
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                console.log('Sobrepeso\n')
+            } else if (imc > 29.9) {
+                console.log('Obesidade\n')
+            }
+        }
+
+        IMC(80, 1.85)
+
+        // Ano bissexto
+        function anoBissexto(ano) {
+            if ((ano % 4 == 0) && (ano % 100 != 0) || (ano % 400 == 0)) {
+                console.log(`O ano ${ano} é bissexto!\n`)
+            } else {
+                console.log(`O ano ${ano} não é bissexto!\n`)
+            }
+        }
+
+        anoBissexto(2024)
+
+    </script>
+
+</body>
+
+</html>

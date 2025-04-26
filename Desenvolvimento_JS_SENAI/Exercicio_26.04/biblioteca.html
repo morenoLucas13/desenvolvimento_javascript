@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotecas</title>
+</head>
+
+<body>
+
+    <script>
+        function exemploVar() {
+            var x = 10
+            if (1 == 1) {
+                var x = 4
+                console.log("Dentro do If: ", x)
+            }
+            console.log(`Fora do if: ${x}\n`)
+        }
+
+        exemploVar()
+
+// =====================================================
+
+        function exemploLet() {
+            let x = 10
+            if (1 == 1) {
+                let x = 4
+                console.log("Dentro do If: ", x)
+            }
+            console.log(`Fora do if: ${x}\n`)
+        }
+
+        exemploLet()
+    </script>
+
+</body>
+
+</html>
